@@ -1,0 +1,577 @@
+/* use the font */
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+// color variable
+$b-gray: #333;
+$black: black;
+$white: #ffffff;
+$base-color: #6e41fe;
+$gray: #f7f7f7;
+$social-link-border: #e5e5e5;
+$link-icon: #cccccc;
+$description: #939598;
+
+// font-style
+
+// font-weight
+.font-weight-500 {
+  font-weight: 500;
+}
+
+// text-decoration
+.text-decoration {
+  text-decoration: underline;
+}
+
+// Portfolio Navigation Bar
+
+.pf-nav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  .nav-page-link {
+    .nav-link {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 1.1rem;
+      line-height: 1.5rem;
+      &:hover {
+        color: $base-color;
+      }
+    }
+  }
+  .nav-social-link {
+    .nav-item {
+    }
+    .nav-link {
+      color: $link-icon;
+      border-width: 1px;
+      border-color: $social-link-border;
+      border-style: solid;
+      padding: 0.3rem 0.6rem;
+      font-size: 14px;
+      width: 32px;
+
+      &:hover {
+        background-color: $base-color;
+        color: $link-icon;
+        border-width: 1px;
+        border-color: $base-color;
+        border-style: solid;
+      }
+    }
+  }
+}
+
+// About Home page
+.mine {
+  padding-top: 4.8rem;
+  padding-bottom: 2.8rem;
+  .title-wellcome {
+    font-weight: 200;
+    font-style: normal;
+    font-size: 2rem;
+    line-height: 2.2rem;
+    color: $b-gray;
+    margin-top: 6rem;
+    margin-bottom: 0.5rem;
+  }
+  .title-main {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 3.43rem;
+    line-height: 4rem;
+    color: $b-gray;
+    margin-bottom: 1rem;
+  }
+  .title-sub {
+    font-weight: 300;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: $b-gray;
+    margin-bottom: 3.2rem;
+  }
+  .description {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: $description;
+    margin-bottom: 2rem;
+  }
+
+  .play-bio {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    color: rgba(235, 234, 237, 0.9);
+    background-color: rgba(83, 73, 120, 0.6);
+    border: 1px solid rgba(83, 73, 120, 0.6);
+    border-radius: 50%;
+    font-size: 3.5rem;
+    top: 60%;
+    left: 40%;
+  }
+}
+
+// Professional and My Experiance
+
+.home-portfolio,
+.contact {
+  padding-top: 4.8rem;
+  padding-bottom: 2.8rem;
+}
+
+.professional-skills {
+  .sub-title {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: $description;
+    margin-bottom: 30px;
+  }
+
+  .works-skills-head {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: $b-gray;
+    margin-bottom: 14px;
+  }
+
+  .circular-progress-bar {
+    .title {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 1.1rem;
+      line-height: 1.8rem;
+      color: $black;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .progress {
+      width: 110px;
+      height: 110px;
+      background: none;
+      position: relative;
+    }
+
+    .progress::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 6px solid #eee;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .progress > span {
+      width: 50%;
+      height: 100%;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      z-index: 1;
+    }
+
+    .progress .progress-left {
+      left: 0;
+    }
+
+    .progress .progress-bar {
+      width: 100%;
+      height: 100%;
+      background: none;
+      border-width: 6px;
+      border-style: solid;
+      position: absolute;
+      top: 0;
+    }
+
+    .progress .progress-left .progress-bar {
+      left: 100%;
+      border-top-right-radius: 80px;
+      border-bottom-right-radius: 80px;
+      border-left: 0;
+      -webkit-transform-origin: center left;
+      transform-origin: center left;
+    }
+
+    .progress .progress-right {
+      right: 0;
+    }
+
+    .progress .progress-right .progress-bar {
+      left: -100%;
+      border-top-left-radius: 80px;
+      border-bottom-left-radius: 80px;
+      border-right: 0;
+      -webkit-transform-origin: center right;
+      transform-origin: center right;
+    }
+
+    .progress .progress-value {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .primary-text {
+      color: rgb(65, 186, 83);
+    }
+    .danger-text {
+      color: rgb(240, 101, 34);
+    }
+    .success-text {
+      color: rgb(110, 65, 254);
+    }
+    .warning-text {
+      color: rgb(235, 0, 139);
+    }
+    .border-primary {
+      border-color: rgb(65, 186, 83) !important;
+    }
+    .border-danger {
+      border-color: rgb(240, 101, 34) !important;
+    }
+    .border-success {
+      border-color: rgb(110, 65, 254) !important;
+    }
+    .border-warning {
+      border-color: rgb(235, 0, 139) !important;
+    }
+  }
+
+  .works-progress-bar {
+    .works-skills-title {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 1rem;
+      line-height: 1.2rem;
+      color: $black;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.experiance-vertical-timeline {
+  .card {
+    .card-body {
+      .join-date {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 1rem;
+        color: $b-gray;
+        margin-bottom: 5px;
+      }
+      .designation {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+      }
+      .short-description {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        color: $description;
+      }
+    }
+  }
+}
+
+// Home page Portfolio
+.home-portfolio {
+  .gallery_product {
+    img {
+      padding: 4px;
+      border-radius: 4px;
+    }
+  }
+
+  .single-portfolio-text {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    &:hover {
+      .portfolio-images-overlay {
+        top: 2%;
+        left: 5%;
+      }
+    }
+
+    .portfolio-images-overlay {
+      width:  92.5%;
+      height: 89%;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      margin: 0 auto;
+      top: -100%;
+      left: 5%;
+      position: absolute;
+      -webkit-transition: 0.6s;
+      transition: 0.6s;
+      h6 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        color: $white;
+        margin-top: 1rem;
+      }
+
+      p.product_price {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        color: $white;
+      }
+    }
+  }
+
+  .btn-outline-primary {
+    color: rgba(0, 0, 0, 0.9);
+  }
+}
+
+footer {
+  background: $base-color;
+  .social-link {
+    .nav-link {
+      font-size: 1.3rem;
+      line-height: 1.8rem;
+      color: $white;
+      transition: all 500ms;
+      &:hover {
+        font-size: 1.8rem;
+        color: rgb(172, 150, 250);
+      }
+    }
+  }
+  .copyright {
+    color: $white;
+  }
+}
+
+.resume {
+  .user-info {
+    background-color: #6e41fe;
+    .name {
+      margin-top: 2rem;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.5rem;
+      line-height: 1.8rem;
+      color: $white;
+    }
+    .description {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+      color: $white;
+    }
+  }
+
+  .experience {
+  }
+}
+
+// Home page Modal
+.portfolio-modal {
+  .carousel-control-next,
+  .carousel-control-prev {
+    bottom: 0;
+    background: $b-gray;
+    height: 50px;
+    top: auto;
+  }
+}
+
+.contact {
+  .list-group-item {
+    background-color: rgb(250, 251, 253);
+    border: 0px;;
+    i {
+      width: 30px;
+      height: 30px;
+      color: $white;
+      background-color: $base-color;
+      text-align: center;
+      line-height: 2.2rem;
+      font-size: 1rem;
+      border-radius: 50%;
+      margin-right: 12px;
+    }
+  }
+}
+/* ------------ common classes ----------------*/
+// button primary
+.pf-btn-primary {
+  background-color: $base-color;
+  border-color: $base-color;
+  color: $white;
+  padding: 0.8rem 3rem;
+
+  &:hover {
+    color: $white;
+  }
+}
+.sub-heading {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  color: $b-gray;
+  margin-bottom: 25px;
+}
+
+.sub-title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: $b-gray;
+}
+
+/* -------------- Responsive breakpoints ------*/
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  .pf-nav {
+    .navbar-brand {
+      color: $base-color !important;
+    }
+
+    .nav-page-link {
+      .nav-item {
+        text-align: center;
+      }
+    }
+
+    .nav-social-link {
+      .nav-item {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  // Home page Mine section
+  .mine {
+    padding-top: 0rem;
+    text-align: center;
+
+    .title-wellcome {
+      margin-top: 3rem;
+    }
+    .title-main {
+      font-size: 2.43rem;
+      line-height: 3rem;
+    }
+    .title-sub {
+      margin-bottom: 1.2rem;
+    }
+
+    .play-bio {
+      top: 56%;
+      left: 35%;
+    }
+
+    .pf-btn-primary {
+      margin-bottom: 20px;
+    }
+  }
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .pf-nav {
+    .navbar-brand {
+      background-color: $base-color;
+      width: 100px;
+      color: $white;
+      text-align: center;
+      line-height: 1.5;
+      font-size: 1.5rem;
+      padding-top: 0rem;
+      padding-bottom: 0rem;
+
+      &::after {
+        content: " ";
+        width: 100px;
+        position: absolute;
+        height: 18px;
+        background-color: $base-color;
+        top: 28px;
+        left: 0px;
+        border-bottom-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+      }
+      &::before {
+        content: " ";
+        width: 100px;
+        position: absolute;
+        height: 40px;
+        background-color: $base-color;
+        top: -36px;
+        left: 0px;
+      }
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}
+
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width
+
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width
+
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width

@@ -466,6 +466,11 @@ footer {
 }
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .mine {
+    img {
+      padding-top: 9rem;
+    }
+  }
 }
 
 // Medium devices (tablets, less than 992px)
@@ -492,7 +497,8 @@ footer {
 
   // Home page Mine section
   .mine {
-    padding-top: 0rem;
+    padding-top: 4.8rem;
+    padding-bottom: 2.8rem;
     text-align: center;
 
     .title-wellcome {
@@ -512,7 +518,7 @@ footer {
     }
 
     .pf-btn-primary {
-      margin-bottom: 20px;
+      // margin-bottom: 20px;
     }
   }
 }
